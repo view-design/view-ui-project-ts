@@ -1,0 +1,31 @@
+{
+  "name": "view-ui-project-ts",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a template project for vue3, ViewUIPlus, TypeScript and Vite.",
+  "scripts": {
+    "serve": "npm run dev",
+    "dev": "vite serve",
+    "dev:staging": "vite serve --mode=staging",
+    "dev:prod": "vite serve --mode=production",
+    "build": "vite build",
+    "build:staging": "vite build --mode=staging",
+    "preview": "npm run build && vite preview",
+    "preview:staging": "npm run build:staging && vite preview --mode=staging"
+  },
+  "dependencies": {
+    "view-ui-plus": "^1.3.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "autoprefixer": "^10.4.5",
+    "less": "^4.0.0",
+    "less-loader": "^10.2.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-html": "^3.2.0",
+    "vue-tsc": "^0.34.7"
+  }
+}
