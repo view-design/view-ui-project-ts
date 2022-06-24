@@ -1,5 +1,5 @@
 # view-ui-project-ts
-This project build for Vue3, Vue-router, Vuex, ViewUIPlus TypeScript and Vite.
+This project build for Vue3, Vue-router, Vuex, ViewUIPlus, TypeScript and Vite.
 ## Install
 ```shell
 npm install
