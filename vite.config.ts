@@ -36,15 +36,15 @@ const config = ({ mode }) => {
         output: {
           chunkFileNames: 'js/[name].[hash].js',
           entryFileNames: 'js/[name].[hash].js',
-          // assetFileNames: "assets/[name].[hash].[ext]",
         }
       }
     },
     envPrefix,
     resolve: {
-      alias: {
-        '@': path.resolve(__dirname, 'src'),
-      },
+      alias: [
+        { find: /^@\//, replacement: path.resolve(__dirname, 'src') + '/' },
+        { find: /^~/, replacement: '' }
+      ],
       extensions: ['.ts', '.tsx', '.js', '.mjs', '.vue', '.json', '.less', '.css']
     },
     css: {
