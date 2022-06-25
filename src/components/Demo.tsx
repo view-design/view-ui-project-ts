@@ -4,7 +4,7 @@ import styles from './demo.module.less'
 
 export default defineComponent({
     setup() {
-        const msg = ref('Hello ViewUIPlus!')
+        const msg = ref('Hello View UI Plus!')
         
         return () => (
             <div class={styles.container}>
