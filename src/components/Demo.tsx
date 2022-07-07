@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue'
 import { Alert, Input } from 'view-ui-plus'
-import styles from './demo.module.less'
+import styles from './Demo.module.less'
 
 export default defineComponent({
     setup() {
