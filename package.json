@@ -15,18 +15,17 @@
   },
   "dependencies": {
     "view-ui-plus": "^1.3.1",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.16"
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "@vitejs/plugin-vue-jsx": "^1.3.10",
-    "autoprefixer": "^10.4.5",
-    "less": "^4.0.0",
-    "less-loader": "^10.2.0",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.9",
-    "vite-plugin-html": "^3.2.0",
-    "vue-tsc": "^0.34.7"
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitejs/plugin-vue-jsx": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "less": "^4.2.0",
+    "typescript": "^5.3.0",
+    "vite": "^6.0.0",
+    "vite-plugin-html": "^3.2.2",
+    "vue-tsc": "^2.0.0"
   }
 }
