@@ -49,6 +49,10 @@ export default defineConfig(({ mode }) => {
             ],
             extensions: ['.ts', '.tsx', '.js', '.mjs', '.vue', '.json', '.less', '.css']
         },
+        assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf', '**/*.svg'],
+        optimizeDeps: {
+            include: ['view-ui-plus']
+        },
         css: {
             postcss: {
                 plugins: [
@@ -58,7 +62,10 @@ export default defineConfig(({ mode }) => {
             preprocessorOptions: {
                 less: {
                     javascriptEnabled: true,
-                    additionalData: `@import "${path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'src/styles/variable.less')}";`
+                    additionalData: `@import "${path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'src/styles/variable.less')}";`,
+                    modifyVars: {
+                        'ionicons-font-path': '~view-ui-plus/src/styles/common/iconfont/fonts'
+                    }
                 }
             }
         },
